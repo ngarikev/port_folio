@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --bg-color: #1f1f38;
+    --color-primary: #4db5ff;
+    --text-color: #b2b9cf;
+    --h-color: #e3e6f0;
+    --container-color: #2c2c6c;
+    --transition: all 300ms ease;
+}
+nav{
+    background: rgba(0,0,0,.3);
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Overpass', sans-serif;
+}
+/*****  Nav section *****/
+.order{
+    color: var(--color-primary);
+    margin-right: 5px;
+}
+
+.text{
+    color: var(--text-color);
+}
+/*****  End Nav section  *****/
+/*****  Hero-section start *****/
+.hello{
+    position: relative;
+    text-align: center;
+    -webkit-text-stroke: 3px var(--color-primary);
+    color: transparent;
+    background-image: linear-gradient(var(--color-primary), var(--color-primary));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -2000px 0;
+    animation: pop 4s linear forwards;
+}
+/********Hello keyframes*********/
+@keyframes pop{
+    0%{ 
+        opacity: 0;
+        transform: translate(0,0);
+        top: -200px;
+        background-position: -2000px 0;
+    }
+    25%,
+    50%{
+        opacity: 1;
+        top: 50px;
+        transform: scale(1.5, 1.5); 
+        background-position: -2000px, 0;
+    }
+    
+    100%,75%{
+        opacity: 0;
+        transform: translate(0,0);
+        top: 100px;
+        background-position: 0 0;
+    }
+}
+/********end Hello keyframes*********/
+.hero-name{
+    position: relative;
+    -webkit-text-stroke: 3px var(--h-color);
+    color: transparent;
+    background-image: linear-gradient(var(--h-color),var(--h-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -2000px 0;
+    opacity: 0;
+    animation: popname 3s ease-in 5s forwards alternate;
+}
+@keyframes popname{
+    0%{
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    90%{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+.hero-title{
+    position: relative;
+    -webkit-text-stroke: 3px var(--h-color);
+    color: transparent;
+    background-image: linear-gradient(var(--h-color),var(--h-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -2000px 0;
+    opacity: 0;
+    animation: poptitle 3s ease-in 7s forwards;
+}
+@keyframes poptitle{
+    0%{
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    90%{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+.hero-text{
+    color: var(--color-primary);
+    opacity: 0;
+    animation: sliderole 3s ease-in 8s forwards;
+}
+@keyframes sliderole{
+    0%{
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    90%{
+        opacity: 1;
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+.cta{
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+    opacity: 0;
+    animation: btnpop-up 3s ease-in-out 10s forwards;
+}
+.cta:hover{
+    background-color: var(--container-color);
+}
+@keyframes btnpop-up{
+    0%{
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+    90%{
+        opacity: .5;
+        transform: scale(1.2, 1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+.scroll{
+    position: absolute;
+    margin-left: -600px;
+    margin-top: 1000px;
+    transform: rotate(90deg);
+    animation: dance 1.5s linear 12.5s infinite;
+}
+@keyframes dance{
+    0%,
+    100%{
+        position: absolute;
+        top: 40px;
+    }
+    50%{
+        position: absolute;
+        top: 20px;
+    } 
+}
+/*****  End Hero-section  *****/
