@@ -164,18 +164,46 @@ body{
     position: absolute;
     margin-left: -600px;
     margin-top: 1000px;
+    opacity: 0;
     transform: rotate(90deg);
     animation: dance 1.5s linear 12.5s infinite;
 }
 @keyframes dance{
     0%,
     100%{
+        opacity: 1;
         position: absolute;
-        top: 40px;
+        top: -20px;
     }
     50%{
+        opacity: 1;
         position: absolute;
-        top: 20px;
+        top: 0px;
     } 
 }
-/*****  End Hero-section  *****/
+/*****  Hero-section End*****/
+
+/*****  social media for desktop *****/
+.social-i a i{
+    font-size: 30px;
+}
+.social-i a i:hover{
+    color: var(--color-primary); 
+}
+
+/*****  About-section start *****/
+.about{
+    margin-top: 150px;
+}
+
+@media (max-width: 768px){
+    .about{
+        margin-top: 0;
+    }
+}
+.horzontal-line{
+    width: 250px;
+    height: 2px;
+    background-color: var(--color-primary);
+    margin-top: 180px;
+}
