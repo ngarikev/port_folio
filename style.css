@@ -52,8 +52,7 @@ body{
         top: -200px;
         background-position: -2000px 0;
     }
-    25%,
-    50%{
+    25%,50%{
         opacity: 1;
         top: 50px;
         transform: scale(1.5, 1.5); 
@@ -169,8 +168,7 @@ body{
     animation: dance 1.5s linear 12.5s infinite;
 }
 @keyframes dance{
-    0%,
-    100%{
+    0%,100%{
         opacity: 1;
         position: absolute;
         top: -20px;
@@ -207,3 +205,70 @@ body{
     background-color: var(--color-primary);
     margin-top: 180px;
 }
+
+.skills{
+    border: 2px solid var(--container-color);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+    animation: borders 5s ease infinite alternate;
+}
+@keyframes borders{
+    0%,50%,100%{
+        border: 2px solid var(--color-primary);
+    }
+    10%,80%{
+        border-bottom: 2px solid var(--container-color);
+    }
+    20%,90%{
+        border-left: 2px solid var(--container-color);
+    }
+    30%,60%{
+        border-top: 2px solid var(--container-color);
+    }
+    40%,70%{
+        border-right: 2px solid var(--container-color);
+    }
+}
+.skill-tag{
+    border: 2px solid var(--container-color);
+    box-sizing: border-box;
+    animation: tag 3s ease infinite alternate;
+}
+@keyframes tag{
+    0%{
+        border-top: 2px solid var(--container-color);
+    }
+    25%{
+        border-right: 2px solid var(--color-primary);
+    }
+    50%{
+        border-bottom: 2px solid var(--container-color);
+    }
+    75%{
+        border-left: 2px solid var(--color-primary);
+    }
+    100%{
+        border: 2px solid var(--container-color);
+    }
+}
+.skill-tag{
+    animation: tag2 3s ease infinite alternate;
+}
+@keyframes tag2{
+    0%{
+        border-top: 2px solid var(--color-primary);
+    }
+    25%{
+        border-right: 2px solid var(--container-color);
+    }
+    50%{
+        border-bottom: 2px solid var(--color-primary);
+    }
+    75%{
+        border-left: 2px solid var(--container-color);
+    }
+    100%{
+        border: 2px solid var(--color-primary);
+    }
+}
+
+/*****  About-section End *****/
