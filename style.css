@@ -17,6 +17,7 @@ html{
 }
 
 body{
+    overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -147,6 +148,7 @@ body{
 }
 .cta:hover{
     background-color: var(--container-color);
+    color: var(--color-primary);
 }
 @keyframes btnpop-up{
     0%{
@@ -287,11 +289,43 @@ body{
 
 .cta-2{
     border-color: var(--color-primary);
-    background: var(--container-color);
+    background: var(--bg-color);
     color: var(--color-primary);
 }
 .cta-2:hover{
-    background: var(--color-primary);
-    color: var(--container-color);
-    border: none;
+    background-color: var(--container-color);
+    color: var(--color-primary);
 }
+/*****  Project-section End *****/
+
+/*****  Contact-section Start *****/
+.dot{
+    font-size: 100px;
+    color: var(--h-color);
+    margin-top: -65px;
+    animation: dot 1.5s linear infinite alternate;
+}
+@keyframes dot{
+    0%{
+        transform: translateX(0);
+        color: var(--h-color);
+    }
+    25%{
+        transform: translateX(40px);
+        color: var(--text-color);
+    }
+    50%{
+        transform: translateX(80px);
+        color: var(--container-color);
+    }
+    75%{
+        transform: translateX(120px);
+        color: var(--container-color);
+    }
+    100%{
+        transform: translateX(160px);
+        color: var(--color-primary);
+    }
+}
+
+/*****  Contact-section End *****/
