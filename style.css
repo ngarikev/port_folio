@@ -213,47 +213,47 @@ body{
 }
 
 .skills{
-    border: 2px solid var(--container-color);
+    border: 1px solid var(--container-color);
     box-shadow: 5px 5px 10px rgba(0,0,0,.3);
     animation: borders 5s ease infinite alternate;
 }
 @keyframes borders{
     0%,50%,100%{
-        border: 2px solid var(--color-primary);
+        border: 1px solid var(--color-primary);
     }
     10%,80%{
-        border-bottom: 2px solid var(--container-color);
+        border-bottom: 1px solid var(--container-color);
     }
     20%,90%{
-        border-left: 2px solid var(--container-color);
+        border-left: 1px solid var(--container-color);
     }
     30%,60%{
-        border-top: 2px solid var(--container-color);
+        border-top: 1px solid var(--container-color);
     }
     40%,70%{
-        border-right: 2px solid var(--container-color);
+        border-right: 1px solid var(--container-color);
     }
 }
 .skill-tag{
-    border: 2px solid var(--container-color);
+    border: 1px solid var(--container-color);
     box-sizing: border-box;
     animation: tag 3s ease infinite alternate;
 }
 @keyframes tag{
     0%{
-        border-top: 2px solid var(--container-color);
+        border-top: 1px solid var(--container-color);
     }
     25%{
-        border-right: 2px solid var(--color-primary);
+        border-right: 1px solid var(--color-primary);
     }
     50%{
-        border-bottom: 2px solid var(--container-color);
+        border-bottom: 1px solid var(--container-color);
     }
     75%{
-        border-left: 2px solid var(--color-primary);
+        border-left: 1px solid var(--color-primary);
     }
     100%{
-        border: 2px solid var(--container-color);
+        border: 1px solid var(--container-color);
     }
 }
 .skill-tag{
@@ -261,19 +261,19 @@ body{
 }
 @keyframes tag2{
     0%{
-        border-top: 2px solid var(--color-primary);
+        border-top: 1px solid var(--color-primary);
     }
     25%{
-        border-right: 2px solid var(--container-color);
+        border-right: 1px solid var(--container-color);
     }
     50%{
-        border-bottom: 2px solid var(--color-primary);
+        border-bottom: 1px solid var(--color-primary);
     }
     75%{
-        border-left: 2px solid var(--container-color);
+        border-left: 1px solid var(--container-color);
     }
     100%{
-        border: 2px solid var(--color-primary);
+        border: 1px solid var(--color-primary);
     }
 }
 
@@ -327,5 +327,7 @@ body{
         color: var(--color-primary);
     }
 }
-
 /*****  Contact-section End *****/
+
+
+/*****  footer-section Start *****/
