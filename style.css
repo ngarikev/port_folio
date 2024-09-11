@@ -303,6 +303,14 @@ body{
     background-color: var(--container-color);
     color: var(--color-primary);
 }
+.card-btn{
+    color: #4db5ff;
+}
+.technology{
+    background-color: var(--bg-color);
+    padding: 0 5px;
+    border: 1px solid var(--color-primary);
+}
 /*****  Project-section End *****/
 
 /*****  Contact-section Start *****/
